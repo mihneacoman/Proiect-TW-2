@@ -1,0 +1,131 @@
+:root{
+    --orange: rgb(255, 248, 240);
+}
+
+h1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 50px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin-top: 20px;
+    background-color: var(--orange);
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 18px;
+}
+
+nav a:last-child{
+    margin-right: 12px;
+}
+
+.meniu_dropdown{
+    display: none;
+    position: absolute;
+    background-color: grey;
+}
+
+.dropdown:hover .meniu_dropdown{
+    display: block;
+}
+
+.meniu_dropdown a{
+    display: block;
+    padding: 10px;
+    width: 100%;
+    color: white;
+}
+
+.iconita{
+    width: 20px;
+    height: 20px; 
+}
+
+#socials{
+    position: absolute;
+    left: 30px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+}
+
+#cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+}
+
+.cump{
+    margin: 30px;
+}
+
+#pom{
+    display: flex;
+    justify-content: center;
+    height: 37vh;
+}
+
+#meniu{
+    font-size: 16px;
+    font-weight: bold;
+    display: none;
+}
+
+form div{
+    margin: 20px;
+}
+
+@media only screen and (max-width: 768px)  {
+
+    h1{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    nav > :not(#socials){
+        display: none;
+    }
+
+    #meniu{
+        display: block !important;
+    }
+
+    .dropdown:hover .meniu_dropdown{
+        display: block;
+        max-width: 80px;
+        transform: translateX(-20px);
+    }
+
+    .meniu_dropdown a{
+        font-size: 10px;
+    }
+
+    #pom{
+        margin: auto;
+        width: 30vh;
+        height: 30vh;
+    }
+}
+

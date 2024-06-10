@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <title>Lord Pups Kennel</title>
+        <meta charset="UTF-8">
+        <meta name="autor" content="Mihnea">
+        <meta name="description" content="Magazinul PupStore este cel mai bun loc pentru a găsi un nou membru pentru familia voastră! Avem cei mai adorabili câini de toate rasele, care cu siguranță vor aduce bucurie în orice cămin.">
+        <meta name="keywords" content="câini, animale, magazin">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="proces_cumparare.css" type="text/css">
+        <link rel="icon" href="sigla_magazin.ico" type="image/x-icon">
+        <script type="text/javascript" src="proces_cumparare.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div id="socials">
+                    <a href="https://www.instagram.com/xasha.royalpuppy/"><img src="iconita_instagram.png" alt="Instagram" class="iconita"></a>
+                    <a href="https://www.tiktok.com/@xasha.royalpuppy"><img src="tiktok.png" alt="Tiktok" class="iconita"></a>
+                </div>
+                <a href="prezentare.html">Acasă</a>
+                <div class="dropdown">
+                    <a>Câinii noștri</a>
+                    <div class="meniu_dropdown">
+                        <a href="samoyed.html">Samoyed</a>
+                        <a href="labrador.html">Labrador retriever</a>
+                        <a href="pomeranian.html">Pomeranian</a>
+                    </div>
+                </div>
+                <a href="proces_cumparare.html">Procesul de cumpărare</a>
+                <a href="reviewuri.html">Recenzii</a>
+                <a href="/logout">Logout</a>
+                <div id="meniu">
+                    <div class="dropdown">
+                        <a>Meniu</a>
+                        <div class="meniu_dropdown">
+                            <a href="prezentare.html">Acasa</a>
+                            <a href="samoyed.html">Samoyed</a>
+                            <a href="labrador.html">Labrador retriever</a>
+                            <a href="pomeranian.html">Pomeranian</a>
+                            <a href="proces_cumparare.html">Procesul de cumparare</a>
+                            <a href="reviewuri.html">Recenzii</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <h1>Procesul de cumpărare</h1>
+        </header>
+        <main>
+        <article class="cump">
+            <h2>Contact</h2>
+            <p>Pentru a cumpăra un prieten canin, vă rugăm să sunați la numărul 0739970740 sau să trimiteți un mail la lordpups@gmail.com 
+                în care să specificați numele, metoda de plată și cățelușul pe care doriți să îl achiziționați.
+            </p>
+        </article>
+        <article class="cump">
+            <h2>Livrare</h2>
+            <p>La Lord Pups Kennel, ne luăm angajamentul să asigurăm că fiecare cățeluș ajunge la noua sa familie în condiții optime și în cel mai scurt timp posibil. Cu o rețea extinsă de parteneri de încredere în domeniul transportului, putem garanta livrarea sigură și rapidă a companionului tău canin, 
+                indiferent de destinație. Pentru a face experiența de achiziție cât mai plăcută și fără griji pentru clienții noștri, oferim urmărirea livrării în timp real și asistență continuă pentru orice întrebări sau nelămuriri pe parcursul procesului de livrare.</p>
+        </article>
+            <article class="cump">
+            <h2>Garanția de sănătate</h2>
+            <p>Toți cățeii de la canisa noastră sunt au toate vaccinurile făcute și sunt într-o stare perfectă de sănătate! Totuși, în cazul
+                tragic al unei afecțiuni imprevizibile și netratabile apărute în primul an de la cumpărare, îți oferim gratuit un alt câine la alegerea dumneavoastră
+                pentru a vă ajuta să treceți mai ușor peste dificilul moment.
+            </p>
+        </article>
+        <div id="pom">
+            <img src="run_pom.jpg" alt="pom">
+        </div>
+        <h3>Formular pentru a găsi câinele potrivit pentru tine:</h3>
+        <form id="cumparare" action="http://localhost:5050/salveaza" method="POST"> 
+            <div>
+                <label for="nume">Nume:</label>
+                <input type="text" id="nume" name="nume" required>
+            </div>        
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>       
+            <div>
+                <label for="rasa">Rasa dorită:</label>
+                <input type="text" id="rasa" name="rasa" required>
+            </div>        
+            <div>
+                <label for="sex">Sex dorit (optional):</label>
+                <input type="radio" id="mascul" name="sex" value="Mascul"> Mascul
+                <input type="radio" id="femela" name="sex" value="Femela"> Femelă
+            </div>
+            <div>
+                <label for="varsta">Vârstă dorită (optional):</label>
+                <input type="number" id="varsta" name="varsta" min="0">
+            </div>
+            <div>
+                <label for="pret">Preț dorit (optional):</label>
+                <input type="number" id="pret" name="pret" min="0">
+            </div>    
+            <div>
+                <input type="submit" value="Trimite cerere">
+            </div>
+        </form>
+        <div id="rezultat"></div>
+        </main>
+        <footer>
+            <ul id="cont">
+                <li>Lord Pups Kennel SRL</li>
+                <li>Telefon: 0739970740</li>
+                <li>Email: lordpups@gmail.com</li>
+            </ul>
+            <div id="jos">
+                <a href="https://www.instagram.com/xasha.royalpuppy/"><img src="iconita_instagram.png" alt="Instagram" class="iconita"></a>
+                <a href="https://www.tiktok.com/@xasha.royalpuppy"><img src="tiktok.png" alt="Tiktok" class="iconita"></a>
+            </div>
+        </footer>
+    </body>
+</html>

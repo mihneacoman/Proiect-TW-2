@@ -1,0 +1,33 @@
+[
+    {
+        "nume": "Andrew",
+        "vârstă": "3 luni",
+        "rasă": "samoyed",
+        "pret": 1000,
+        "detalii": {
+            "certificat": "c245",
+            "istoric_medical": "sănătos"
+        }
+    },
+    {
+        "nume": "Matilda",
+        "vârstă": "6 luni",
+        "rasă": "samoyed",
+        "pret": 900,
+        "detalii": {
+            "certificat": "c246",
+            "istoric_medical": "probleme respiratorii"
+        }
+    },
+    {
+        "nume": "Joshua",
+        "vârstă": "8 luni",
+        "rasă": "samoyed",
+        "pret": 1200,
+        "detalii": {
+            "certificat": "c247",
+            "istoric_medical": "sănătos"
+        }
+    }
+
+]

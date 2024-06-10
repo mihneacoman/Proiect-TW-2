@@ -1,0 +1,196 @@
+:root{
+    --orange: rgb(255, 248, 240);
+}
+
+body{
+    /*margin-top: 20px;*/
+    background-color: var(--orange);
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end; 
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 18px;
+}
+
+nav a:last-child{
+    margin-right: 12px;
+}
+
+.meniu_dropdown{
+    display: none;
+    position: absolute;
+    background-color: grey;
+}
+
+.dropdown:hover .meniu_dropdown{
+    display: block;
+}
+
+.meniu_dropdown a{
+    display: block;
+    padding: 10px;
+    width: 100%;
+    color: white;
+}
+
+.iconita{
+    width: 20px;
+    height: 20px; 
+}
+
+#socials{
+    position: absolute;
+    left: 30px;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.chenar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.column{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px 200px;
+}
+
+.caine{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+header{
+    margin: 0;
+    padding: 0;
+    background-image: url(labrador2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+}
+
+#t{
+    margin: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.buton{
+    display: inline-block;
+    text-decoration: none;
+    transition: transform 0.3s, color 0.5s 0.5s linear;
+    margin-left: 30px;
+}
+
+.buton:hover{
+    color: red;
+    transform: scale(1.2);
+}
+
+.info{
+    margin: 20px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+}
+
+#meniu{
+    font-size: 16px;
+    font-weight: bold;
+    display: none;
+}
+
+@media only screen and (max-width: 768px)  {
+    h1{
+        margin-top: 10vh;
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav > :not(#socials){
+        display: none;
+    }
+
+    #meniu{
+        display: block !important;
+    }
+
+    .dropdown:hover .meniu_dropdown{
+        display: block;
+        max-width: 80px;
+        transform: translateX(-20px);
+    }
+
+    .meniu_dropdown a{
+        font-size: 10px;
+    }
+
+    #t{
+        font-size: 1em;
+    }
+
+    .column{
+        grid-template-columns: 1fr;
+    }
+
+    .caine img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    header{
+        background-image: url(labramob.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 30vh;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1280px){
+    .column{
+        grid-template-columns: 1fr;
+    }
+
+    .caine{
+        justify-self: center;
+    }
+
+    h1{
+        margin-top: 10vh;
+    }
+}
+
